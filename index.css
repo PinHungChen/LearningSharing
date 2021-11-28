@@ -1,0 +1,119 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+    background-color: #151E30;
+    }
+
+    .menu li{
+      list-style-type: none;
+    }
+
+    /* menu字體顏色 */
+    .menu li a{
+    font-size: 22px;
+    color: #fff;
+  }
+  .menu li a:hover{
+    font-size: 22px;
+    color: #60F3DE;
+    text-decoration: none;
+  }
+  #header h3{
+    color: #fff;
+  }
+
+  #footer{
+    color:#fff;
+  }
+
+  /* 側邊攔RWD */
+  @media (max-width: 575px){
+    #header{
+      padding-right: 0px;
+    }
+    /* 側邊攔設定 */
+    .menu .asideNav {
+    position: fixed;
+    top:0px;
+    right: -100%;
+    /* margin-left: auto; */
+   
+    flex-direction: column;
+    width: 60%;
+    height: 100vh;
+    background-color: #0F0B21;
+    -webkit-box-shadow: 0 0 8px rgb(0 0 0 / 50%);
+    box-shadow: 0 0 8px rgb(0 0 0 / 50%);
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    padding-left: 0px;
+    z-index: 1001;
+    }
+    /* 開啟側邊攔 */
+    .menuIcon::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 28px;
+      content: "\f0c9";
+      position: relative;
+      color: #fff;
+    }
+    .menuIcon {
+      height: 40px;
+      width: 40px;
+      position: relative;
+    }
+    /* 關閉側邊攔 */
+    .navClose::before{
+    font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 25px;
+      content: "\f00d";
+      right: 0px;
+      color: #fff;
+    }
+    .navClose {
+      height: 30px;
+      width: 30px;
+      margin-left: auto;
+    }
+    .menu li{
+      margin: 10px 0px;
+      border-bottom: solid #60F3DE 1px;
+  }
+}
+
+
+
+/* 主內容區 */
+.classId h2{
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .memberCard{
+    border-radius: 20px;
+    border:solid #60F3DE 2px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 35%);
+  }
+  .memberCard:hover{
+  transform: scale(1.05);
+  }
+  .memberCard img{
+    width: 80%;
+    border-radius:100%;
+  }
+  .memberCard a{
+    color:#18ae97;
+    text-decoration: none;
+  }
+  .card-body p{
+    margin: 0px;
+  }
+
+  .card-body p:last-child, p:nth-child(2){
+    color: #000;
+  }
+  .card-title{
+    font-size: 23px;
+  }

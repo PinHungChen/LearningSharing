@@ -1,0 +1,297 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+    background-color: #151E30;
+    }
+.container-xl{
+height: 100%;
+    }
+    .menu li{
+      list-style-type: none;
+    }
+
+    /* menu字體顏色 */
+    .menu li a{
+    font-size: 22px;
+    color: #fff;
+  }
+  .menu li a:hover{
+    font-size: 22px;
+    color: #60F3DE;
+    text-decoration: none;
+  }
+  #header h3{
+    color: #fff;
+  }
+
+  #footer{
+    position: absolute;
+    height: 100px;
+    left: 0px;
+    bottom: -100px;
+  }
+  #footer p{
+    color:#fff;
+  }
+
+  /* 側邊攔RWD */
+  @media (max-width: 575px){
+    #header{
+      padding-right: 0px;
+    }
+    /* 側邊攔設定 */
+    .menu .asideNav {
+    position: fixed;
+    top:0px;
+    right: -100%;
+    /* margin-left: auto; */
+
+    flex-direction: column;
+    width: 60%;
+    height: 100vh;
+    background-color: #0F0B21;
+    -webkit-box-shadow: 0 0 8px rgb(0 0 0 / 50%);
+    box-shadow: 0 0 8px rgb(0 0 0 / 50%);
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    padding-left: 0px;
+    z-index: 1001;
+    }
+    /* 開啟側邊攔 */
+    .menuIcon::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 28px;
+      content: "\f0c9";
+      position: relative;
+      color: #fff;
+    }
+    .menuIcon {
+      height: 40px;
+      width: 40px;
+      position: relative;
+    }
+    /* 關閉側邊攔 */
+    .navClose::before{
+    font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 25px;
+      content: "\f00d";
+      right: 0px;
+      color: #fff;
+    }
+    .navClose {
+      height: 30px;
+      width: 30px;
+      margin-left: auto;
+    }
+    .menu li{
+      margin: 10px 0px;
+      border-bottom: solid #60F3DE 1px;
+  }
+}
+
+
+/* 主內容RWD */
+@media (max-width: 966px){
+/* timeLineRWD */
+.lineWeekly{
+  position:relative;
+  height: 100%;
+  border-left: solid #fff 1px;
+  margin: 0px;
+  left: 10px;
+  }
+.cardWeekly::before{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 15px;
+        content: "\f111";
+        left: -60px;
+        top: 5px;
+        color: RGB(96 243 222);
+  }
+
+  /* weeklycard */
+.cardWeekly{
+  position: relative;
+  background-color:rgb(256 256 256);
+  width: 80%;
+  margin:20px 50px;
+  margin-right: 0px;
+  border: solid #60F3DE 2px;
+  border-radius: 10px;
+  padding: 0px;
+  opacity: 0.85;
+}
+}
+
+@media (min-width: 967px) and (max-width: 1066px) {
+  /* timeLine */
+.lineWeekly{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.lineWeekly::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  border-left: 1px solid #fff;
+  height: 100%;
+  width: 1px;
+}
+
+
+/* weeklycard */
+.itemWeekly .cardWeekly:nth-child(even) {
+  position: relative;
+  width: 45%;
+  background-color:rgb(256 256 256);
+  margin:-15px 20px;
+  border: solid #60F3DE 2px;
+  border-radius: 10px;
+  padding: 0px;
+  opacity: 0.85;
+}
+.itemWeekly .cardWeekly:nth-child(odd) {
+  position: relative;
+  width: 45%;
+  background-color:rgb(256 256 256);
+  margin:-15px 20px;
+  border: solid #60F3DE 2px;
+  border-radius: 10px;
+  padding: 0px;
+  opacity: 0.85;
+  left: 51%;
+}
+
+.cardWeekly:nth-child(odd)::before{
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 15px;
+      content: "\f111";
+      left: -9%;
+      top: 5px;
+      color: RGB(96 243 222);
+}
+.cardWeekly:nth-child(even)::after{
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 15px;
+      content: "\f111";
+      right: -9%;
+      top: 5px;
+      color: RGB(96 243 222);
+}
+}
+
+@media (min-width: 1066px){
+/* timeLine */
+.lineWeekly{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.lineWeekly::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  border-left: 1px solid #fff;
+  height: 100%;
+  width: 1px;
+}
+
+
+/* weeklycard */
+.itemWeekly .cardWeekly:nth-child(even) {
+  position: relative;
+  width: 45%;
+  background-color:rgb(256 256 256);
+  margin:-15px 20px;
+  border: solid #60F3DE 2px;
+  border-radius: 10px;
+  padding: 0px;
+  opacity: 0.85;
+}
+.itemWeekly .cardWeekly:nth-child(odd) {
+  position: relative;
+  width: 45%;
+  background-color:rgb(256 256 256);
+  margin:-15px 20px;
+  border: solid #60F3DE 2px;
+  border-radius: 10px;
+  padding: 0px;
+  opacity: 0.85;
+  left: 51%;
+}
+
+.cardWeekly:nth-child(odd)::before{
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 15px;
+      content: "\f111";
+      left: -8%;
+      top: 5px;
+      color: RGB(96 243 222);
+}
+.cardWeekly:nth-child(even)::after{
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 15px;
+      content: "\f111";
+      right: -9%;
+      top: 5px;
+      color: RGB(96 243 222);
+}
+}
+
+
+/* 主內容區 */
+/*title*/
+.titleWeekly h1,span{
+color:#18ae97
+}
+.titleWeekly span{
+    color:#fff
+    }
+.titleWeekly img{
+    height: 100px;
+    margin: 0px 20px;
+    border-radius: 100%;
+}
+
+
+.itemWeekly .cardWeekly:first-child{
+  margin-top: 20px;
+}
+
+.cardHeaderWeekly{
+    background-color:RGB(96 243 222);
+}
+
+
+.cardHeaderWeekly span,p{
+    color: #000;
+}
+
+.itemWeekly .cardWeekly:hover{
+  opacity: 1;
+  border: solid #60F3DE 2px;
+  box-shadow: 0px 0px 10px 2px #60F3DE;
+}
+
+.cardWeekly a:hover{
+    text-decoration: none;
+}
+
